@@ -1,0 +1,82 @@
+/*Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Some Color Variables */
+:root {
+    --main-color:#8358ff;             /* pre defining variables(properties) for color scheme  */
+    --body-color:#3f50e7;
+    --container-color:#141740;
+    --text-color:#fff;
+}
+img{
+    width:100%;
+}
+a {
+    text-decoration: none;              /* removes underline from all anchor tag  */
+}
+body {
+    color: var(--text-color);           /* using pre-defined color */
+    background: var(--body-color);
+}
+.nft-container  {
+    height: 100vh;
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nft-img{
+    height: auto;                       /*  image maintains its aspect ratio and fits within the container  */
+    width: 100%;                        /*  round the corner  */
+    border-radius: 10px;
+}
+.nft-box{
+    background: var(--container-color); /*  adds background color  */
+    padding: 15px;                      /*  adds padding inside the box  */
+    border-radius: 10px;                /*  curves the corner  */
+    margin-bottom: 4rem;                /*  add bottom margin  */
+}
+.title{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;                   /*  top margin  */
+}
+.price{
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem;              /*  vertical margin  */
+}
+.buy-btn{
+    position:absolute;                  /*  button at the bottom right of the containing element  */
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+.buy-btn:hover {
+    background: hsl(255, 100%, 64%);
+    transition: all;                    /*   hover effect always on  */
+}
+.swiper-pagination-bullet-active {
+    background: chocolate !important; /*  pagination color  */
+}
+@media (max-width:1070px){              /*  Adjusts the container width to 90% and centers it when the viewport width is 1070px or smaller  */
+    .nft-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.footer {
+    display:flex;
+    justify-content: space-evenly;      /*  Uses Flexbox to evenly space out the footer items  */
+}
+
